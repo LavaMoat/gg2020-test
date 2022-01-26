@@ -1,0 +1,17 @@
+[package]
+name = "gg2020-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+getrandom = {version = "0.1.16", features = ["wasm-bindgen"]}
+curv-kzen = {version = "0.9", features = ["num-bigint"], default-features = false}
+rand = { version="0.6.5", features = ["wasm-bindgen"] }
+round-based = "0.1"
+#libsecp256k1 = "0.3.2"
+
+[dependencies.multi-party-ecdsa]
+git = "https://github.com/ZenGo-X/multi-party-ecdsa"
+branch = "master"
+default-features = false
