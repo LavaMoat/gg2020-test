@@ -198,8 +198,8 @@ mod tests {
         assert_eq!(65, pk3.to_bytes(false).len());
 
         // Start signing offline stage
-        let mut s1 = OfflineStage::new(1, vec![1, 2], ks1)?;
-        let mut s2 = OfflineStage::new(2, vec![1, 2], ks2)?;
+        let mut s1 = OfflineStage::new(1, vec![3, 2], ks3)?;
+        let mut s2 = OfflineStage::new(2, vec![3, 2], ks2)?;
 
         assert!(s1.wants_to_proceed());
         assert!(s2.wants_to_proceed());
