@@ -258,6 +258,9 @@ mod tests {
             }
         }
 
+        assert!(s1.wants_to_proceed());
+        assert!(s2.wants_to_proceed());
+
         let s1_r3: Vec<_> = {
             s1.proceed()?;
             s1.message_queue().drain(..).collect()
